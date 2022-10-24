@@ -1,3 +1,18 @@
+# Description
+
+The simple app which gets an image from NASA.
+It makes a get regwuest to NASA API Endpoints.
+
+## Technologies
+- React (useState, useEffect)
+- axios
+- CSS
+
+## Screenshot
+![2022-10-24_15-48-32](https://user-images.githubusercontent.com/57872789/197542120-fd24ad34-2f40-4d6c-9bd9-e9b8d43cb014.png)
+
+
+
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
