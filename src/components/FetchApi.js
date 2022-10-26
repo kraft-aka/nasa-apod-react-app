@@ -8,7 +8,8 @@ const FetchApi = () => {
   const nasaEndpoint = process.env.REACT_APP_NASA_ENDPOINT;
   const nasaApiKey = process.env.REACT_APP_SECRET_KEY;
 
-  const url = `${nasaEndpoint}?api_key=${nasaApiKey}`;
+  //const url = `${process.env.REACT_APP_NASA_ENDPOINT}?api_key=${process.env.REACT_APP_SECRET_KEY}`;
+  const url = "https://api.nasa.gov/planetary/apod"+"?api_key=" + "dEx6y4xp6c7vdggZFdiHxUTRdhZo8coglQ2yWoNy"
 
   useEffect(() => {
     axios
@@ -18,7 +19,7 @@ const FetchApi = () => {
         console.log(resp.data);
       })
       .catch((error) => {
-        console.log(error);
+        console.error(error);
       });
   }, []);
 
